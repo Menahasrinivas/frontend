@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import Header from './component/Header';
 import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='bg-red-500'>
+    <div>
     <Header/>
+    <main className='pt-16 bg-slate-100 min-vh-[calc(100vh)]'>
+      <Outlet/>
+    </main>
     </div>
     
   );
